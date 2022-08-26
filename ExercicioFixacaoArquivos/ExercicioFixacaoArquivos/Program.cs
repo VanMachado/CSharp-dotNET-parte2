@@ -1,13 +1,15 @@
 ﻿string sourcePath = @"D:\workspace\file1.txt";
+string targetPath = @"D:\workspace\file2.txt";
 
 try
 {
-    using (StreamReader sr = File.OpenText(sourcePath))
+    string[] lista = File.ReadAllLines(sourcePath);
+
+    using (StreamWriter sr = File.AppendText(targetPath))
     {
-        while (!sr.EndOfStream)
+        foreach(string line in lista)
         {
-            string line = sr.ReadLine();
-            Console.WriteLine(line);
+            sr.WriteLine(line.ToUpper());
         }
     }
 }
