@@ -1,19 +1,27 @@
 ﻿string sourcePath = @"D:\workspace\file1.txt";
 string targetpath = @"D:\workspace\file2.txt";
 
+//FileStream fs = null;
+StreamReader sr = null;
+
 try
 {
-    FileInfo fileInfo = new FileInfo(sourcePath);
-    fileInfo.CopyTo(targetpath);
-
-    string[] lista = File.ReadAllLines(sourcePath);
-
-    foreach(string line in lista)
+    //fs = new FileStream(sourcePath, FileMode.Open); //pode ser instanciado assim tbm
+    sr = File.OpenText(sourcePath);
+    while (!sr.EndOfStream)
     {
+        string line = sr.ReadLine();
         Console.WriteLine(line);
-    }
+    }    
 }
-catch (IOException e)
+catch (Exception)
 {
-    Console.WriteLine("An error occured! " + e.Message);
+
+    throw;
+}
+finally
+{
+    if (sr != null)
+        sr.Close();
+    // (fs != null) fs.Close();
 }
