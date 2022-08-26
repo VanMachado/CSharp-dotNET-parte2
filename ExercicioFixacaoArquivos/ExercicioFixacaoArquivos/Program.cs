@@ -1,17 +1,30 @@
-﻿string sourcePath = @"D:\workspace\file1.txt";
-string targetPath = @"D:\workspace\file2.txt";
+﻿string path = @"D:\workspace\myfolder";
 
 try
 {
-    string[] lista = File.ReadAllLines(sourcePath);
+    IEnumerable<string> folder = Directory.
+        EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
 
-    using (StreamWriter sr = File.AppendText(targetPath))
+    Console.WriteLine("FOLDERS:");
+    foreach(string folderName in folder)
     {
-        foreach(string line in lista)
-        {
-            sr.WriteLine(line.ToUpper());
-        }
+        Console.WriteLine(folderName);
     }
+
+    IEnumerable<string> files = Directory.
+        EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
+
+    Console.WriteLine();
+
+    Console.WriteLine("FILES:");
+    foreach (string folderName in files)
+    {
+        Console.WriteLine(folderName);
+    }
+
+    Console.WriteLine();
+
+    Directory.CreateDirectory(path + "\\newFolder");
 }
 catch (IOException e)
 {
