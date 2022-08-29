@@ -1,30 +1,15 @@
-﻿string path = @"D:\workspace\myfolder";
+﻿string path = @"D:\workspace\file1.txt";
 
 try
 {
-    IEnumerable<string> folder = Directory.
-        EnumerateDirectories(path, "*.*", SearchOption.AllDirectories);
-
-    Console.WriteLine("FOLDERS:");
-    foreach(string folderName in folder)
-    {
-        Console.WriteLine(folderName);
-    }
-
-    IEnumerable<string> files = Directory.
-        EnumerateFiles(path, "*.*", SearchOption.AllDirectories);
-
-    Console.WriteLine();
-
-    Console.WriteLine("FILES:");
-    foreach (string folderName in files)
-    {
-        Console.WriteLine(folderName);
-    }
-
-    Console.WriteLine();
-
-    Directory.CreateDirectory(path + "\\newFolder");
+    Console.WriteLine("DirectorySepareteChar: " + Path.DirectorySeparatorChar);
+    Console.WriteLine(Path.PathSeparator);
+    Console.WriteLine("GetDirectoryName: " + Path.GetDirectoryName(path));
+    Console.WriteLine("GetFileName: " + Path.GetFileName(path));
+    Console.WriteLine("GetFileNameWithoutExtension: " + Path.GetFileNameWithoutExtension(path));
+    Console.WriteLine("GetExtension: " + Path.GetExtension(path));
+    Console.WriteLine("GetFullPath: " + Path.GetFullPath(path));
+    Console.WriteLine("GetTempPath: " + Path.GetTempPath());
 }
 catch (IOException e)
 {
