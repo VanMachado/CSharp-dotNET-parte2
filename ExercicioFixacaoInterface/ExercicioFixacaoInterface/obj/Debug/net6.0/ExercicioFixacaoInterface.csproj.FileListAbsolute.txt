@@ -1,0 +1,15 @@
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\bin\Debug\net6.0\ExercicioFixacaoInterface.exe
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\bin\Debug\net6.0\ExercicioFixacaoInterface.deps.json
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\bin\Debug\net6.0\ExercicioFixacaoInterface.runtimeconfig.json
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\bin\Debug\net6.0\ExercicioFixacaoInterface.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\bin\Debug\net6.0\ExercicioFixacaoInterface.pdb
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ExercicioFixacaoInterface.csproj.AssemblyReference.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ExercicioFixacaoInterface.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ExercicioFixacaoInterface.AssemblyInfoInputs.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ExercicioFixacaoInterface.AssemblyInfo.cs
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ExercicioFixacaoInterface.csproj.CoreCompileInputs.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ExercicioFixacaoInterface.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\refint\ExercicioFixacaoInterface.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ExercicioFixacaoInterface.pdb
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ExercicioFixacaoInterface.genruntimeconfig.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoInterface\ExercicioFixacaoInterface\obj\Debug\net6.0\ref\ExercicioFixacaoInterface.dll
