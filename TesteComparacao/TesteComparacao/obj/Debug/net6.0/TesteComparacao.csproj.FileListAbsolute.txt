@@ -1,0 +1,15 @@
+D:\workspace\TesteComparacao\TesteComparacao\bin\Debug\net6.0\TesteComparacao.exe
+D:\workspace\TesteComparacao\TesteComparacao\bin\Debug\net6.0\TesteComparacao.deps.json
+D:\workspace\TesteComparacao\TesteComparacao\bin\Debug\net6.0\TesteComparacao.runtimeconfig.json
+D:\workspace\TesteComparacao\TesteComparacao\bin\Debug\net6.0\TesteComparacao.dll
+D:\workspace\TesteComparacao\TesteComparacao\bin\Debug\net6.0\TesteComparacao.pdb
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\TesteComparacao.csproj.AssemblyReference.cache
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\TesteComparacao.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\TesteComparacao.AssemblyInfoInputs.cache
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\TesteComparacao.AssemblyInfo.cs
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\TesteComparacao.csproj.CoreCompileInputs.cache
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\TesteComparacao.dll
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\refint\TesteComparacao.dll
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\TesteComparacao.pdb
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\TesteComparacao.genruntimeconfig.cache
+D:\workspace\TesteComparacao\TesteComparacao\obj\Debug\net6.0\ref\TesteComparacao.dll
