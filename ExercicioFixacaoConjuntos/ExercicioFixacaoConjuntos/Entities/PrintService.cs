@@ -1,28 +1,26 @@
-﻿namespace ExercicioFixacaoConjuntos.Entities
-{
-    internal class PrintService
-    {
-        public List<int> Values { get; set; } = new List<int>();
+﻿//Dessa maneira, usando o Generics da maneira correta, atraves do <T> consigo deixar
+//o programa mais flexivel, podendo receber qualquer tipo de dado.
 
-        public void AddValue(int value)
+namespace ExercicioFixacaoConjuntos.Entities
+{
+    internal class PrintService<T>
+    {
+        public List<T> Values { get; set; } = new List<T>();
+
+        public void AddValue(T value)
         {
-            for (int i = 0; i < value; i++)
-            {
-                int valores = int.Parse(Console.ReadLine());
-                Values.Add(valores);
-            }
+            Values.Add(value);
         }
 
-        public int First()
+        public T First()
         {
             return Values.First();
         }
 
         public void Print()
         {
-            Console.Write("[ ");
-            Values.Append(0);
-            foreach (int value in Values)
+            Console.Write("[ ");            
+            foreach (T value in Values)
             {
                 Console.Write(value + " ");
             }
