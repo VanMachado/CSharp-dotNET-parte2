@@ -1,0 +1,15 @@
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\bin\Debug\net6.0\ExercicioFixacaoConjuntos.exe
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\bin\Debug\net6.0\ExercicioFixacaoConjuntos.deps.json
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\bin\Debug\net6.0\ExercicioFixacaoConjuntos.runtimeconfig.json
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\bin\Debug\net6.0\ExercicioFixacaoConjuntos.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\bin\Debug\net6.0\ExercicioFixacaoConjuntos.pdb
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ExercicioFixacaoConjuntos.csproj.AssemblyReference.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ExercicioFixacaoConjuntos.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ExercicioFixacaoConjuntos.AssemblyInfoInputs.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ExercicioFixacaoConjuntos.AssemblyInfo.cs
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ExercicioFixacaoConjuntos.csproj.CoreCompileInputs.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ExercicioFixacaoConjuntos.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\refint\ExercicioFixacaoConjuntos.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ExercicioFixacaoConjuntos.pdb
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ExercicioFixacaoConjuntos.genruntimeconfig.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoConjuntos\ExercicioFixacaoConjuntos\obj\Debug\net6.0\ref\ExercicioFixacaoConjuntos.dll
