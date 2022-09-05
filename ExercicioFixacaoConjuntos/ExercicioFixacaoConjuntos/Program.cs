@@ -1,27 +1,22 @@
-﻿using ExercicioFixacaoConjuntos.Entities;
+﻿using Entities;
+using Services;
 
-try
+Console.Write("Enter N: ");
+int n = int.Parse(Console.ReadLine());
+
+List<Products> lista = new List<Products>();
+
+for (int i = 0; i < n; i++)
 {
-    Console.Write("How many values to insert? ");
-    int n = int.Parse(Console.ReadLine());
-
-    //Ao instanciar a classe generica, eu defino qual tipo de dado eu vou receber sem perder a coesao do
-    //programa e matendo o TypeSafety
-    PrintService<string> printer = new PrintService<string>();
-
-    for(int i = 0; i < n; i++)
-    {
-        string resp = Console.ReadLine();
-        printer.AddValue(resp);
-    }
-
-    Console.WriteLine();
-    printer.Print();
-    Console.WriteLine();
-    Console.Write("First: ");
-    Console.WriteLine(printer.First());
+    string[] fields = Console.ReadLine().Split(',');
+    string name = fields[0];
+    double value = double.Parse(fields[1]);
+    
+    lista.Add(new Products(name, value));
 }
-catch (InvalidCastException e)
-{
-    Console.WriteLine(e.Message);
-}
+
+Console.WriteLine("MAX:");
+
+CalculationService service = new CalculationService();
+
+Console.WriteLine(service.Max(lista));
