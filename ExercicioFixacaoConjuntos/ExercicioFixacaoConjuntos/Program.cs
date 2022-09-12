@@ -1,6 +1,5 @@
-﻿//Eh importante ressaltar que objetos vao comparar por referencia, logo se nao tiver um Equals
-//e HashCode nao irao comparar o conteudo. Ja os Structs comparam nativamente os conteudos
-using Entities;
+﻿using Entities;
+using System.Globalization;
 
 namespace Conjuntos
 {
@@ -8,19 +7,41 @@ namespace Conjuntos
     {
         static public void Main(string[] args)
         {
-            HashSet<Product> a = new HashSet<Product>();
-            a.Add(new Product("TV", 900.00));
-            a.Add(new Product("Notebook", 1200.00));
+            string path = @"D:\workspace\in.txt";
+            HashSet<Client> set = new HashSet<Client>();
 
-            HashSet<Point> b = new HashSet<Point>();
-            b.Add(new Point(3, 4));
-            b.Add(new Point(5, 10));
+            try
+            {               
+                using (StreamReader sr = File.OpenText(path))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        string[] fields = sr.ReadLine().Split(' ');
+                        string name = fields[0];
+                        //Para ler a data no formato ISO 8601 precisa usar o ParseExact e o documento deve
+                        //estar no formato da mascara abaixo
+                        DateTime log = DateTime.ParseExact(fields[1],
+                            "yyyyMMddTHH:mm:ss", CultureInfo.InvariantCulture);
 
-            Product prod = new Product("Notebook", 1200.00);
-            Point p = new Point(3, 4);
+                        set.Add(new Client(name, log));
+                    }
 
-            Console.WriteLine(a.Contains(prod));
-            Console.WriteLine(b.Contains(p));
+                    Console.WriteLine($"Total users: {set.Count}");
+                    Console.WriteLine("-------------------");
+                    foreach(Client client in set)
+                    {
+                        Console.WriteLine(client);
+                    }
+                }                
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

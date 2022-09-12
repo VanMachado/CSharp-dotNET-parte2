@@ -1,25 +1,25 @@
 ﻿namespace Entities
 {
-    internal class Product
+    internal class Client
     {
         public string Name { get; set; }
-        public double Price { get; set; }
+        public DateTime Log { get; set; }
 
-        public Product(string name, double price)
+        public Client(string name, DateTime log)
         {
             Name = name;
-            Price = price;
+            Log = log;
         }
 
         public override bool Equals(object? obj)
         {
-            if(!(obj is Product))
+            if(!(obj is Client))
             {
                 throw new ArgumentException("Invalid type");
             }
             
-            Product other = obj as Product;
-            if(Name.Equals(other.Name) && Price.Equals(other.Price))
+            Client other = obj as Client;
+            if(Name.Equals(other.Name))
             {
                 return true;
             }
@@ -29,7 +29,13 @@
 
         public override int GetHashCode()
         {
-            return Name.GetHashCode() + Price.GetHashCode();
+            return Name.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return Name + ", " + Log.
+                ToString("dd/MM/yyyy HH:mm:ss");
         }
     }
 }
