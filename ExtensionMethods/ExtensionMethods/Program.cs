@@ -1,3 +1,3 @@
-﻿DateTime dt = new DateTime(2022, 9, 27, 10, 10, 45);
+﻿string s1 = "Good morning my dear";
 
-Console.WriteLine(dt.ElapsedTime());
+Console.WriteLine(s1.Cut(35));
