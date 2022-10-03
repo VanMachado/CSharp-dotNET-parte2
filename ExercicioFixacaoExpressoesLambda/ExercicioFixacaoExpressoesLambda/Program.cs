@@ -13,18 +13,18 @@ namespace ExercicioFixacaoExpressoesLambda
             list.Add(new Product("Tablet", 350.50));
             list.Add(new Product("HD Case", 80.90));
 
-            list.ForEach(UpdatePrice);
+            List<string> result = list.Select(UpdateName).ToList();
 
-            foreach (Product p in list)
+            foreach (string s in result)
             {
-                Console.WriteLine(p);
+                Console.WriteLine(s);
             }
         }        
-        //O action é um tipo de delegate que recebe um objeto do Tipo T como argumento
-        //e nao retorna nada e pode ser usardo em metodos que recebm um action como argumento
-        static void UpdatePrice(Product p)
+        //O Func é um tipo de delegate que recebe um objeto do Tipo T como argumento
+        //e retorna um valor, assim como o Action, ele pode ter 0 ou mais argumentos
+        static string UpdateName(Product p)
         {
-            p.Price += p.Price * 0.10;
+            return p.Name.ToUpper();            
         }
     }
 }
