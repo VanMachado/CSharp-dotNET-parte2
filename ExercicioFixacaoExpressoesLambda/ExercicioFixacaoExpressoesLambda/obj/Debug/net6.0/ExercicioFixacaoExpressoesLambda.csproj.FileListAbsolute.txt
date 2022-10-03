@@ -1,0 +1,15 @@
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\bin\Debug\net6.0\ExercicioFixacaoExpressoesLambda.exe
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\bin\Debug\net6.0\ExercicioFixacaoExpressoesLambda.deps.json
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\bin\Debug\net6.0\ExercicioFixacaoExpressoesLambda.runtimeconfig.json
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\bin\Debug\net6.0\ExercicioFixacaoExpressoesLambda.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\bin\Debug\net6.0\ExercicioFixacaoExpressoesLambda.pdb
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ExercicioFixacaoExpressoesLambda.csproj.AssemblyReference.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ExercicioFixacaoExpressoesLambda.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ExercicioFixacaoExpressoesLambda.AssemblyInfoInputs.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ExercicioFixacaoExpressoesLambda.AssemblyInfo.cs
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ExercicioFixacaoExpressoesLambda.csproj.CoreCompileInputs.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ExercicioFixacaoExpressoesLambda.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\refint\ExercicioFixacaoExpressoesLambda.dll
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ExercicioFixacaoExpressoesLambda.pdb
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ExercicioFixacaoExpressoesLambda.genruntimeconfig.cache
+D:\workspace\C# e dotNet\ExercicioFixacaoExpressoesLambda\ExercicioFixacaoExpressoesLambda\obj\Debug\net6.0\ref\ExercicioFixacaoExpressoesLambda.dll
