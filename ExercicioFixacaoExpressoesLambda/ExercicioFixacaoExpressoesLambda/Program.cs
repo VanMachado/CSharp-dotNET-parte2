@@ -6,14 +6,15 @@ products.Add(new Products(900.00, "TV"));
 products.Add(new Products(1200.00, "Notebook"));
 products.Add(new Products(450.00, "Tablet"));
 
-products.Sort(CompareProducts);
 
-foreach(Products p in products)
+//Pode ser feito assim, ou simplesmente declarando a funcao lambada no argumento
+//Comparison<Products> comp = (p1, p2) => p1.Name.ToUpper().
+//    CompareTo(p2.Name.ToUpper());
+
+products.Sort((p1, p2) => p1.Name.ToUpper().
+    CompareTo(p2.Name.ToUpper()));
+
+foreach (Products p in products)
 {
     Console.WriteLine(p);
-}
-
-static int CompareProducts(Products p1, Products p2)
-{
-    return p1.Name.ToUpper().CompareTo(p2.Name.ToUpper());
 }
