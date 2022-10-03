@@ -13,20 +13,18 @@ namespace ExercicioFixacaoExpressoesLambda
             list.Add(new Product("Tablet", 350.50));
             list.Add(new Product("HD Case", 80.90));
 
-            list.RemoveAll(ProductTest);
+            list.ForEach(UpdatePrice);
 
             foreach (Product p in list)
             {
                 Console.WriteLine(p);
             }
-        }
-
-        
-        //O predicate é um tipo de delegate que recebe um objeto do Tipo T como argunento
-        //e retorna um boolenao como resposta
-        public static bool ProductTest(Product p)
+        }        
+        //O action é um tipo de delegate que recebe um objeto do Tipo T como argumento
+        //e nao retorna nada e pode ser usardo em metodos que recebm um action como argumento
+        static void UpdatePrice(Product p)
         {
-            return p.Price <= 100.00;
+            p.Price += p.Price * 0.10;
         }
     }
 }
