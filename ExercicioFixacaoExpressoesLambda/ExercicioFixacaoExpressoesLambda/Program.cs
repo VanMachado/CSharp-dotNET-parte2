@@ -66,7 +66,27 @@ namespace ExercicioFixacaoExpressoesLambda
             var result8 = products
                 .Where(x => x.Id == 3)
                 .SingleOrDefault();
-
+            //Max price
+            double result9 = products.Max(p => p.Price);
+            //Min price
+            double result10 = products.Min(p => p.Price);
+            //Category 1 sum price
+            double result11 = products.Where(x => x.Category.Id == 1).Sum(p => p.Price);
+            //Category 1 average price
+            double result12 = products.Where(x => x.Category.Id == 1).Average(p => p.Price);
+            //Category 5 average price
+            double result13 = products.Where(x => x.Category.Id == 5)
+                .Select(p => p.Price)
+                .DefaultIfEmpty(0.0)
+                .Average();
+            //Usando o aggregate. O papel do '0.0' eh atribuir um valor padrao em caso de runtime exception
+            var result14 = products
+                .Where(x => x.Category.Id == 1)
+                .Select(p => p.Price)
+                .Aggregate(0.0, (x, y) => x + y);
+            //Usando o GroupBy
+            var result15 = products
+                .GroupBy(p => p.Category);
 
             Print("Tier 1 and Price < 900", result1);
             Print("Names of products from Tools", result2);
@@ -79,6 +99,30 @@ namespace ExercicioFixacaoExpressoesLambda
             Console.WriteLine("===================================");
             Console.WriteLine("SingleOrDefault test: " + result8);
             Console.WriteLine("===================================");
+            Console.WriteLine("Max price: " + result9);
+            Console.WriteLine("===================================");
+            Console.WriteLine("Min price: " + result10);
+            Console.WriteLine("===================================");
+            Console.WriteLine("Category 1 sum price: " + result11);
+            Console.WriteLine("===================================");
+            Console.WriteLine("Category 1 average price: " + result12);
+            Console.WriteLine("===================================");
+            Console.WriteLine("Category 5 average price: " + result13);
+            Console.WriteLine("===================================");
+            Console.WriteLine("Category 1 aggregate sum: " + result14);
+            Console.WriteLine("===================================");
+            Console.WriteLine("Usando o GroupBy: ");
+           
+            foreach(IGrouping<Category, Product> gruop in result15)
+            {
+                Console.WriteLine("Category " + gruop.Key.Name + ": ");
+                foreach(Product x in gruop)
+                {
+                    Console.WriteLine(x);
+                }
+
+                Console.WriteLine("===================================");
+            }
         }
     }
 }
