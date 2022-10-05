@@ -4,7 +4,7 @@ using System.Globalization;
 namespace ExercicioFixacaoExpressoesLambda
 {
     class Program
-    {     
+    {
         static void Print<T>(IEnumerable<T> obj)
         {
             foreach (T item in obj)
@@ -18,30 +18,38 @@ namespace ExercicioFixacaoExpressoesLambda
         public static void Main(string[] args)
         {
             string path = @"D:\workspace\in.txt";
-            string[] lines = File.ReadAllLines(path);
-            List<Product> list = new List<Product>();
+            List<Employee> list = new List<Employee>();
 
             try
             {
                 using (StreamReader sr = File.OpenText(path))
                 {
-                    foreach (string line in lines)
+                    while (!sr.EndOfStream)
                     {
-                        string[] fields = line.Split(',');
+                        string[] fields = sr.ReadLine().Split(',');
                         string name = fields[0];
-                        double price = double.Parse(fields[1], CultureInfo.InvariantCulture);
+                        string email = fields[1];
+                        double salary = double.Parse(fields[2], CultureInfo.InvariantCulture);
 
-                        list.Add(new Product(name, price));
+                        list.Add(new Employee(name, email, salary));
                     }
-                }
 
-                double average = list.Average(x => x.Price);
-                var minOrd = list
-                    .Where(x => x.Price < average)                    
-                    .OrderByDescending(p => p.Name)
-                    .Select(y => y.Name);
-                Console.WriteLine("Average price: $" + average.ToString("F2"));
-                Print(minOrd);
+                    Console.Write("Enter salary: ");
+                    double value = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+                    Console.WriteLine($"Email of people whose salary is more than {value}:");
+                    IEnumerable<string> salaryAboveValue = list
+                        .Where(x => x.Salary > value)
+                        .OrderBy(p => p.Email)
+                        .Select(y => y.Email);
+                    Print(salaryAboveValue);
+                                        
+                    double sum = list
+                        .Where(p => p.Name[0] == 'M')
+                        .Sum(x => x.Salary);
+                    Console.Write($"Sum of salary of people whose name starts with 'M': {sum}");
+                    Console.WriteLine();
+                }
             }
             catch (Exception e)
             {
